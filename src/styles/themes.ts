@@ -12,7 +12,7 @@ export const darkTheme = {
   elementBackground: "#4a4a49", // ebony (dark elements)
   text: "#F2F2F2", // whiteSmoke (light text)
   primary: "#A5A5A5", // silver (can be a good primary color in dark mode)
-  secondary: "#CCCCCC", // lightSilver (lighter secondary text)
+  secondary: "#616161", // lightSilver (lighter secondary text)
   accent: "#595A4A", // ebony (darker accent or element color)
 };
 

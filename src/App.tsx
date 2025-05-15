@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import Sidebar from "./components/Sidebar";
+import AppRoutes from "./routes/routes";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const AppContainer = styled.div`
   display: flex;
@@ -13,22 +15,16 @@ const ContentContainer = styled.div`
   min-height: 100vh;
 `;
 
-const Title = styled.h1`
-  color: ${(props) => props.theme.primary};
-`;
-
 function App() {
   return (
-    <AppContainer>
-      <Sidebar />
-      <ContentContainer>
-        <Title>Welcome to Burrow!</Title>
-        <p>
-          Organize your documents into secure, local libraries and search
-          contextually with precision and privacy.
-        </p>
-      </ContentContainer>
-    </AppContainer>
+    <Router>
+      <AppContainer>
+        <Sidebar />
+        <ContentContainer>
+          <AppRoutes />
+        </ContentContainer>
+      </AppContainer>
+    </Router>
   );
 }
 
